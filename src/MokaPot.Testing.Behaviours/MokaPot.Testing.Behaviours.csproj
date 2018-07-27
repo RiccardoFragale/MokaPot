@@ -65,6 +65,10 @@
       <Project>{A76AF33F-2D0C-48E5-8179-ABC51ADF6317}</Project>
       <Name>MokaPot.Backend.Core</Name>
     </ProjectReference>
+    <ProjectReference Include="..\MokaPot.Frontend.Common\MokaPot.Frontend.Common.csproj">
+      <Project>{A041B801-C69A-4A9C-B7AF-172D3B453B82}</Project>
+      <Name>MokaPot.Frontend.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
