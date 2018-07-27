@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9FB73BCB-FF44-4970-A869-8B94C240923C}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{A76AF33F-2D0C-48E5-8179-ABC51ADF6317}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MokaPot.ConsoleFrontend</RootNamespace>
-    <AssemblyName>MokaPot.ConsoleFrontend</AssemblyName>
+    <RootNamespace>MokaPot.Backend.Core</RootNamespace>
+    <AssemblyName>MokaPot.Backend.Core</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -42,13 +40,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Features\CleaningFeature.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\CoffeeMachineService.cs" />
     <Compile Include="Services\ICoffeeMachineService.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <ProjectReference Include="..\MokaPot.Frontend.Common\MokaPot.Frontend.Common.csproj">
+      <Project>{A041B801-C69A-4A9C-B7AF-172D3B453B82}</Project>
+      <Name>MokaPot.Frontend.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

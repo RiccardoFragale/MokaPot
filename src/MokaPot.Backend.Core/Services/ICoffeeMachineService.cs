@@ -1,4 +1,4 @@
-﻿namespace MokaPot.ConsoleFrontend.Services
+﻿namespace MokaPot.Backend.Core.Services
 {
     public interface ICoffeeMachineService
     {
