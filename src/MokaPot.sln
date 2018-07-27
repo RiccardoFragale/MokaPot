@@ -16,6 +16,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MokaPot.Frontend.Common", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MokaPot.Testing.Behaviours", "MokaPot.Testing.Behaviours\MokaPot.Testing.Behaviours.csproj", "{CB0CE3A2-0F58-494E-BD0E-1AB7646EFBBA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MokaPot.Frontend.Web", "MokaPot.Frontend.Web\MokaPot.Frontend.Web.csproj", "{C44B8785-2643-40D4-A96C-5693F26BAD8C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,6 +40,10 @@ Global
 		{CB0CE3A2-0F58-494E-BD0E-1AB7646EFBBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CB0CE3A2-0F58-494E-BD0E-1AB7646EFBBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CB0CE3A2-0F58-494E-BD0E-1AB7646EFBBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C44B8785-2643-40D4-A96C-5693F26BAD8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C44B8785-2643-40D4-A96C-5693F26BAD8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C44B8785-2643-40D4-A96C-5693F26BAD8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C44B8785-2643-40D4-A96C-5693F26BAD8C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

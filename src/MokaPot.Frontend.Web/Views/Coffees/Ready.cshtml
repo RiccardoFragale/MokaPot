@@ -1,0 +1,15 @@
+﻿@model bool
+@{
+    ViewBag.Title = "Ready";
+}
+
+<h2>Ready</h2>
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h4>Outcome</h4>
+    </div>
+    <div class="panel-body">
+        @(Model ? "Coffee ready!" : "Error")
+    </div>
+</div>
