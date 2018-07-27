@@ -54,6 +54,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="CleanBehavioursTests.cs" />
+    <Compile Include="EspressoBehavioursTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
