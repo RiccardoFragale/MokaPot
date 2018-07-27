@@ -1,13 +1,20 @@
 ﻿using MokaPot.Backend.Core.Entities;
 using MokaPot.Backend.Core.Services;
+using MokaPot.Frontend.Common;
 
 namespace MokaPot.Backend.Core.Units
 {
     public class SteamBlastUnit : ISteamBlastUnit
     {
-        public bool Execute(int blastSeconds, int waterMl)
+        private CoffeeMachineEntity coffeeMachine;
+
+        public SteamBlastUnit(CoffeeMachineEntity coffeeMachine)
         {
-            var coffeeMachine = new CoffeeMachineEntity();
+            this.coffeeMachine = coffeeMachine;
+        }
+
+        public UnitResult<CoffeeMachineEntity> Execute(int blastSeconds, int waterMl)
+        {
             coffeeMachine.GetWater(waterMl);
             coffeeMachine.SteamBlast(blastSeconds);
 
@@ -20,7 +27,13 @@ namespace MokaPot.Backend.Core.Units
                 isSuccessful = isSuccessful && coffeeMachineService.SteamBlast(blastSeconds);
             }
 
-            return isSuccessful;
+            var operationResult = new UnitResult<CoffeeMachineEntity>
+            {
+                IsSuccessful = isSuccessful,
+                Value = coffeeMachine
+            };
+
+            return operationResult;
         }
     }
 }

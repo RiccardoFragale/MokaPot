@@ -1,3 +1,4 @@
+using MokaPot.Backend.Core.Entities;
 using MokaPot.Backend.Core.Units;
 using MokaPot.Frontend.Common;
 
@@ -7,8 +8,8 @@ namespace MokaPot.Backend.Core.Features
     {
         public bool Execute()
         {
-            ISteamBlastUnit steamBlastUnit = new SteamBlastUnit();
-            return steamBlastUnit.Execute(9, 100);
+            ISteamBlastUnit steamBlastUnit = new SteamBlastUnit(new CoffeeMachineEntity());
+            return steamBlastUnit.Execute(9, 100).IsSuccessful;
         }
     }
 }

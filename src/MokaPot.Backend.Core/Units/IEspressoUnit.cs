@@ -3,8 +3,8 @@ using MokaPot.Frontend.Common;
 
 namespace MokaPot.Backend.Core.Units
 {
-    public interface ISteamBlastUnit
+    public interface IEspressoUnit
     {
-        UnitResult<CoffeeMachineEntity> Execute(int blastSeconds, int waterMl);
+        UnitResult<CoffeeMachineEntity> Execute(int coffeeGrams, int waterMl);
     }
 }
